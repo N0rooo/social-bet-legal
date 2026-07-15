@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="landing.css">
 <script>document.documentElement.classList.add("js")</script>
 </head>
-<body>
+<body id="haut">
 
 <!-- ============ header + hero ============ -->
 <div class="in">
@@ -129,14 +129,26 @@
   </div>
 </section>
 
+<!-- ============ tous mes paris ============ -->
+<section class="block paper rev">
+  <div class="in">
+    <div class="phone rv"><img src="img/s-paris.jpg" alt="Tous mes paris : recherche, filtres et tri" loading="lazy" width="620" height="1347"></div>
+    <div class="block-copy rv">
+      <span class="kicker">RIEN NE SE PERD</span>
+      <h2>Tous tes paris, retrouvables</h2>
+      <p>Toute ta carrière de parieur au même endroit : <strong>recherche libre</strong>, onglets public / amis / groupes / privés, filtres par statut, sport ou bookmaker, et tri par plus grosse cote ou plus gros gain. Les en-têtes de mois affichent ton bilan exact, même sur des milliers de paris.</p>
+    </div>
+  </div>
+</section>
+
 <!-- ============ calendrier ============ -->
-<section class="block inkbg rev">
+<section class="block inkbg">
   <div class="in">
     <div class="phone rv"><img src="img/s-calendrier.jpg" alt="Le calendrier des gains" loading="lazy" width="620" height="1347"></div>
     <div class="block-copy rv">
       <span class="kicker">JOUR PAR JOUR</span>
       <h2>Le calendrier des gains</h2>
-      <p>Tes journées vertes et tes journées rouges, mois par mois, comme un vrai bilan de trader. Remonte les mois passés en un tap. Et dans « Tous mes paris » : recherche, filtres par statut, sport ou bookmaker, tri par plus grosse cote ou plus gros gain. <strong>Rien ne se perd, jamais.</strong></p>
+      <p>Tes journées vertes et tes journées rouges, mois par mois, comme un vrai bilan de trader. Remonte les mois passés en un tap. Un mois rouge se lit aussi vite qu'un mois vert : c'est comme ça qu'on progresse.</p>
     </div>
   </div>
 </section>
@@ -227,7 +239,7 @@
   </div>
 </footer>
 
-<button class="totop" aria-label="Remonter en haut" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+<a class="totop" href="#haut" aria-label="Remonter en haut">↑</a>
 
 <script>
   const io = "IntersectionObserver" in window

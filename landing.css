@@ -325,3 +325,8 @@ html.js .hero-stage { opacity: 0; transform: scale(0.92) rotate(6deg); animation
   .duo .phone { width: min(140px, 34vw) !important; }
   .burst { width: 280px; height: 280px; }
 }
+
+/* bloc sur papier (pause visuelle) */
+.block.paper { background: var(--paper); color: var(--ink); }
+.block.paper .kicker { background: var(--pink); }
+.block.paper p strong { background: var(--pink); color: #fff; }
