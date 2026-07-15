@@ -288,11 +288,40 @@ html.js .hero-stage { opacity: 0; transform: scale(0.92) rotate(6deg); animation
 @media (min-width: 761px) { .duo .phone { width: min(190px, 30vw); } }
 
 /* la pièce à J de l'app */
-.jcoin {
+.jcoin-old {
   display: inline-flex; align-items: center; justify-content: center;
   width: 44px; height: 44px; border-radius: 999px;
   background: radial-gradient(circle at 34% 30%, #FFE28A, var(--gold) 58%, #E5A50A);
   border: 3px solid var(--ink);
   font-family: var(--display); font-size: 22px; color: var(--ink);
   box-shadow: inset -2px -3px 0 rgba(26, 23, 48, 0.22), 2px 3px 0 rgba(26, 23, 48, 0.35);
+}
+
+/* icônes maison */
+.svgic { width: 46px; height: 46px; display: block; }
+.tic { width: 1.05em; height: 1.05em; vertical-align: -0.14em; display: inline-block; }
+.ball { width: 40px; height: 40px; }
+.ball.b2 { width: 34px; height: 34px; }
+.ball.b3 { width: 36px; height: 36px; }
+
+/* bouton remonter */
+.totop {
+  position: fixed; right: 16px; bottom: 18px; z-index: 50;
+  width: 52px; height: 52px; border-radius: 999px;
+  background: var(--ink); color: var(--paper);
+  border: 3px solid var(--paper); outline: 3px solid var(--ink);
+  font-family: var(--display); font-size: 22px; cursor: pointer;
+  opacity: 0; pointer-events: none; transform: translateY(14px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  box-shadow: 0 6px 18px rgba(26, 23, 48, 0.35);
+}
+.totop.show { opacity: 1; pointer-events: auto; transform: none; }
+
+/* screens moins imposants sur mobile */
+@media (max-width: 760px) {
+  .hero .shot, .phone { width: min(230px, 62vw) !important; }
+  .block .phone { width: min(200px, 56vw) !important; }
+  .how-card .phone { width: min(180px, 50vw) !important; }
+  .duo .phone { width: min(140px, 34vw) !important; }
+  .burst { width: 280px; height: 280px; }
 }
