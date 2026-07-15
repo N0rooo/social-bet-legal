@@ -14,175 +14,211 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="landing.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
-<body class="landing">
-<div class="wrap">
+<body>
 
-<header>
-  <a class="wordmark" href="index.html">SOCIA<span class="b">BET</span></a>
-  <nav>
-    <a href="#tuto">L'app</a>
-    <a href="aide.html">Aide</a>
-    <a href="https://apps.apple.com/fr/app/sociabet/id6777273280" class="nav-cta">Télécharger</a>
-  </nav>
-</header>
+<!-- ============ header + hero ============ -->
+<div class="in">
+  <header class="top">
+    <a class="wordmark" href="index.html">SOCIA<span class="b">BET</span></a>
+    <nav>
+      <a href="#tuto">L'app</a>
+      <a href="aide.html">Aide</a>
+      <a class="dl" href="https://apps.apple.com/fr/app/sociabet/id6777273280">Télécharger</a>
+    </nav>
+  </header>
+</div>
 
-<!-- ============ HERO ============ -->
 <section class="hero">
-  <div class="hero-text">
-    <span class="badge">100% GRATUIT · ZÉRO ARGENT RÉEL</span>
-    <h1>Tes paris.<br>Tes potes.<br><span class="hl">Zéro excuse.</span></h1>
-    <p class="hero-sub">Le réseau social des parieurs sportifs. Scanne tes tickets en une photo, suis ta bankroll et tes stats, et chambre tes potes quand leur combiné casse.</p>
+  <div class="in">
+    <div class="hero-copy">
+      <span class="eyebrow">100% GRATUIT · ZÉRO ARGENT RÉEL · 18+</span>
+      <h1><span>Tes paris.</span><span class="l2">Tes potes.</span><span class="l3">Zéro excuse.</span></h1>
+      <p class="hero-sub">Le réseau social des parieurs sportifs. Scanne tes tickets en une photo, suis ta bankroll, et chambre tes potes quand leur combiné casse.</p>
+      <a class="appstore" href="https://apps.apple.com/fr/app/sociabet/id6777273280">
+        <span class="apple">&#63743;</span>
+        <span class="appstore-txt"><small>Télécharger dans</small>l'App Store</span>
+      </a>
+      <p class="hero-note">Gratuit · iPhone · Réservé aux 18 ans et plus</p>
+    </div>
+    <div class="hero-stage">
+      <div class="burst" aria-hidden="true"></div>
+      <span class="ball b1" aria-hidden="true">⚽</span>
+      <span class="ball b2" aria-hidden="true">🎾</span>
+      <span class="ball b3" aria-hidden="true">🏀</span>
+      <div class="phone"><img src="img/s-feed.jpg" alt="Le feed SociaBet : les pronos de la communauté et de tes amis" width="620" height="1347"></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>SIUUU</span><span>+37,00€</span><span>COMBINÉ ×8.61</span><span>LE FOOTIX 🐔</span><span>GAGNÉ ✓</span><span>SCAN EN 3 SECONDES</span><span>JETONS GRATUITS</span><span>CHAMBRAGE ILLIMITÉ</span>
+    <span>SIUUU</span><span>+37,00€</span><span>COMBINÉ ×8.61</span><span>LE FOOTIX 🐔</span><span>GAGNÉ ✓</span><span>SCAN EN 3 SECONDES</span><span>JETONS GRATUITS</span><span>CHAMBRAGE ILLIMITÉ</span>
+  </div>
+</div>
+
+<!-- ============ comment ça marche ============ -->
+<section class="how" id="tuto">
+  <div class="in">
+    <div class="how-head rv">
+      <h2>Comment ça marche</h2>
+      <p>TROIS GESTES, ET TON PARI VIT SA VIE.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-card c1 rv">
+        <span class="hnum">1</span>
+        <div class="phone"><img src="img/s-scanner.jpg" alt="Le scanner de tickets SociaBet" loading="lazy" width="620" height="1347"></div>
+        <h3>Scanne ton ticket</h3>
+        <p>Une photo ou un screenshot : sélections, cotes, mise et gain sont lus tout seuls. Plusieurs paris sur une image ? Tous importés. Pas de ticket ? Saisie manuelle en 30 secondes.</p>
+      </div>
+      <div class="how-card c2 rv">
+        <span class="hnum">2</span>
+        <div class="phone"><img src="img/s-detail.jpg" alt="Le détail d'un pari : likes, commentaires, réactions" loading="lazy" width="620" height="1347"></div>
+        <h3>Publie, ils réagissent</h3>
+        <p>Public, entre amis, en groupe ou privé : tu choisis qui voit quoi, pari par pari. Tes potes likent, commentent, réagissent, et reprennent ton prono en un tap.</p>
+      </div>
+      <div class="how-card c3 rv">
+        <span class="hnum">3</span>
+        <div class="phone"><img src="img/s-valider.jpg" alt="L'écran À valider : résultats en un tap" loading="lazy" width="620" height="1347"></div>
+        <h3>Valide en un tap</h3>
+        <p>Gagné, perdu, annulé : un tap et c'est réglé. Mise en jeu et gains potentiels sous les yeux, bankroll à jour en direct.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ célébration ============ -->
+<section class="block violet">
+  <div class="in">
+    <div class="phone rv"><img src="img/s-celebration.jpg" alt="La célébration SIUUU en plein écran" loading="lazy" width="440" height="956"></div>
+    <div class="block-copy rv">
+      <span class="kicker">LE MOMENT ICONIQUE</span>
+      <h2>Chaque victoire déclenche TA célébration</h2>
+      <p>Un pari gagné, et c'est le show : le SIUUU, la samba, le salto, la statue dorée, le but en or… <strong>28 célébrations</strong> à débloquer, dont des exclusives. Tes potes peuvent la rejouer depuis ton pari, et tu peux l'envoyer dans le chat de groupe pour enfoncer le clou.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ combiné de groupe ============ -->
+<section class="block orange rev">
+  <div class="in">
+    <div class="phone rv"><img src="img/s-combi.jpg" alt="Le combiné de groupe SociaBet" loading="lazy" width="620" height="1347"></div>
+    <div class="block-copy rv">
+      <span class="kicker">LA FEATURE SIGNATURE</span>
+      <h2>Le combiné de groupe</h2>
+      <p>Chaque membre ajoute UN prono avec SA mise, et les cotes se multiplient. Un retardataire ? Un bouton pour le réveiller. Ça passe : gloire collective. Un seul prono tombe : le coupable devient <strong>LE FOOTIX 🐔</strong>, badge de la honte et pseudo rouge partout, jusqu'à ce qu'un autre fasse pire. Chat, classement et tableau des coupables inclus.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ stats ============ -->
+<section class="block teal">
+  <div class="in">
+    <div class="phone rv"><img src="img/s-profil.jpg" alt="Le profil SociaBet : bankroll et stats" loading="lazy" width="620" height="1347"></div>
+    <div class="block-copy rv">
+      <span class="kicker">TES CHIFFRES, EN CLAIR</span>
+      <h2>Ta bankroll, ton profit, ta courbe</h2>
+      <p>Ton vrai bilan, sans triche : paris, réussite, profit net, et la courbe de ta bankroll à explorer jour par jour. Gère <strong>plusieurs bankrolls</strong>, repars à neuf sans perdre ton historique, et plonge dans les stats détaillées : répartitions, records, séries, meilleurs créneaux.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ calendrier ============ -->
+<section class="block inkbg rev">
+  <div class="in">
+    <div class="phone rv"><img src="img/s-calendrier.jpg" alt="Le calendrier des gains" loading="lazy" width="620" height="1347"></div>
+    <div class="block-copy rv">
+      <span class="kicker">JOUR PAR JOUR</span>
+      <h2>Le calendrier des gains</h2>
+      <p>Tes journées vertes et tes journées rouges, mois par mois, comme un vrai bilan de trader. Et dans « Tous mes paris » : recherche, filtres par statut, sport ou bookmaker, tri par plus grosse cote ou plus gros gain. <strong>Rien ne se perd, jamais.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ scan ============ -->
+<section class="block pink">
+  <div class="in">
+    <div class="phone rv"><img src="img/s-quoi-scanner.jpg" alt="Les types d'images acceptées par le scan" loading="lazy" width="620" height="1347"></div>
+    <div class="block-copy rv">
+      <span class="kicker">ZÉRO SAISIE</span>
+      <h2>Le scan sait tout lire</h2>
+      <p>Le ticket partagé depuis l'app de ton bookmaker, un screenshot de ta liste de paris (tous importés pour <strong>un seul scan</strong>), ou la photo d'un ticket papier de bar. L'app t'explique même quoi capturer, avec des exemples. Tout est pré-rempli, tu n'as plus qu'à vérifier.</p>
+    </div>
+  </div>
+</section>
+
+<div class="ticker gold" aria-hidden="true">
+  <div class="ticker-track">
+    <span>BONUS QUOTIDIEN</span><span>SÉRIE DE 12 JOURS 🔥</span><span>BOUTIQUE</span><span>MARCEL LE COQ ARBITRE</span><span>THÈME STADE LA NUIT</span><span>PARRAINAGE +200</span><span>CADRES ANIMÉS</span>
+    <span>BONUS QUOTIDIEN</span><span>SÉRIE DE 12 JOURS 🔥</span><span>BOUTIQUE</span><span>MARCEL LE COQ ARBITRE</span><span>THÈME STADE LA NUIT</span><span>PARRAINAGE +200</span><span>CADRES ANIMÉS</span>
+  </div>
+</div>
+
+<!-- ============ features ============ -->
+<section class="more">
+  <div class="in">
+    <h2 class="rv">Et ce n'est pas tout</h2>
+    <div class="mosaic">
+      <div class="tile t1 rv"><div class="emo">🪙</div><h3>Les jetons</h3><p>Bonus quotidien, séries de connexion, défis vérifiés serveur. Une monnaie de jeu 100% gratuite, jamais d'argent réel.</p></div>
+      <div class="tile t2 rv"><div class="emo">🛍️</div><h3>La boutique</h3><p>Cadres d'avatar animés, titres, thèmes, fonds d'app (stade la nuit, casino, parquet…), compagnons et célébrations.</p></div>
+      <div class="tile t3 rv"><div class="emo">🔥</div><h3>Les réactions</h3><p>Chambre ou félicite en un tap. Les abonnés ont 4 réactions animées exclusives : GOAT, LÉGENDE, TACLE, DIAMANT.</p></div>
+      <div class="tile t4 rv"><div class="emo">📣</div><h3>Les alertes</h3><p>Cotes boostées et bons plans partagés par tes amis et tes suivis, avec notification. Fini le bon plan raté.</p></div>
+      <div class="tile t5 rv"><div class="emo">🤝</div><h3>Le parrainage</h3><p>200 jetons par pote qui rejoint avec ton code, et une célébration d'équipe exclusive à 5 parrainages.</p></div>
+      <div class="tile t6 rv"><div class="emo">👑</div><h3>SociaBet+</h3><p>100 scans par jour, labo de stats complet, montantes illimitées, bankrolls multiples et cosmétiques exclusifs.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA final ============ -->
+<section class="last">
+  <div class="in rv">
+    <h2>Ramène<br>ton <span class="accent">groupe.</span></h2>
+    <p>SociaBet est gratuit. Crée ton groupe, lance un combiné, et que le meilleur chambre les autres.</p>
     <a class="appstore" href="https://apps.apple.com/fr/app/sociabet/id6777273280">
-      <span class="apple-logo">&#63743;</span>
+      <span class="apple">&#63743;</span>
       <span class="appstore-txt"><small>Télécharger dans</small>l'App Store</span>
     </a>
-    <p class="hero-note">Gratuit · iPhone · Réservé aux 18 ans et plus</p>
-  </div>
-  <img class="shot" src="img/s-feed.jpg" alt="Le feed SociaBet : les pronos de la communauté et de tes amis" width="620" height="1347">
-</section>
-
-<!-- ============ COMMENT ÇA MARCHE ============ -->
-<section class="steps" id="tuto">
-  <h2 class="section-title">Comment ça marche</h2>
-  <p class="section-sub">Trois gestes, et ton pari vit sa vie.</p>
-  <div class="steps-grid">
-    <div class="step">
-      <img class="shot" src="img/s-scanner.jpg" alt="Le scanner de tickets SociaBet" loading="lazy" width="620" height="1347">
-      <div class="step-head"><span class="snum" style="background:var(--pink)">1</span><h3>SCANNE TON TICKET</h3></div>
-      <p>Une photo ou un screenshot : l'app lit toute seule les sélections, les cotes, la mise et le gain. Plusieurs paris sur une image ? Tous importés pour un seul scan. Pas de ticket ? Saisie manuelle en 30 secondes.</p>
-    </div>
-    <div class="step">
-      <img class="shot" src="img/s-detail.jpg" alt="Le détail d'un pari : likes, commentaires, réactions" loading="lazy" width="620" height="1347">
-      <div class="step-head"><span class="snum" style="background:var(--violet)">2</span><h3>PUBLIE, ILS RÉAGISSENT</h3></div>
-      <p>Public, entre amis, en groupe ou privé : tu choisis qui voit quoi, pari par pari. Tes potes likent, commentent, posent des réactions, et peuvent reprendre ton prono en un tap.</p>
-    </div>
-    <div class="step">
-      <img class="shot" src="img/s-valider.jpg" alt="L'écran À valider : résultats en un tap" loading="lazy" width="620" height="1347">
-      <div class="step-head"><span class="snum" style="background:var(--teal)">3</span><h3>VALIDE EN UN TAP</h3></div>
-      <p>Gagné, perdu, annulé : un tap et c'est réglé. Tu vois d'un coup d'œil ta mise en jeu et tes gains potentiels, et ta bankroll se met à jour en direct.</p>
-    </div>
   </div>
 </section>
 
-<!-- ============ CÉLÉBRATIONS ============ -->
-<section class="split">
-  <img class="shot" src="img/s-celebration.jpg" alt="La célébration SIUUU en plein écran" loading="lazy" width="440" height="956">
-  <div class="split-text">
-    <span class="badge">LE MOMENT ICONIQUE</span>
-    <h2>Chaque victoire déclenche TA célébration</h2>
-    <p>Un pari gagné, et c'est le show : le SIUUU, la samba, le salto, la statue dorée, le but en or… <strong>28 célébrations</strong> à débloquer, dont des exclusives. Tes potes peuvent rejouer ta célébration depuis ton pari, et tu peux l'envoyer dans le chat de groupe pour enfoncer le clou.</p>
-  </div>
-</section>
-
-<!-- ============ COMBINÉS DE GROUPE ============ -->
-<section class="split rev">
-  <img class="shot" src="img/s-combi.jpg" alt="Le combiné de groupe SociaBet" loading="lazy" width="620" height="1347">
-  <div class="split-text">
-    <span class="badge" style="background:var(--orange)">LA FEATURE SIGNATURE</span>
-    <h2>Le combiné de groupe</h2>
-    <p>Chaque membre du groupe ajoute UN prono avec SA mise, et les cotes se multiplient. Un retardataire ? Un bouton pour le réveiller. Tout le monde a joué ? Si ça passe, gloire collective et gains pour tous. Si un seul prono tombe, le coupable devient <strong>LE FOOTIX du groupe</strong> : badge de la honte et pseudo rouge partout, jusqu'à ce qu'un autre fasse pire. Chat de groupe, classement et tableau des coupables inclus.</p>
-  </div>
-</section>
-
-<!-- ============ STATS / BANKROLL ============ -->
-<section class="split">
-  <img class="shot" src="img/s-profil.jpg" alt="Le profil SociaBet : bankroll et stats" loading="lazy" width="620" height="1347">
-  <div class="split-text">
-    <span class="badge" style="background:var(--teal)">TES CHIFFRES, EN CLAIR</span>
-    <h2>Ta bankroll, ton profit, ta courbe</h2>
-    <p>Ton profil affiche ton vrai bilan : nombre de paris, réussite, profit net et la courbe de ta bankroll (touche-la pour explorer jour par jour, sommet et point bas marqués). Gère <strong>plusieurs bankrolls nommées</strong>, repars à neuf quand tu veux sans perdre ton historique, et plonge dans les stats détaillées : répartitions par sport et bookmaker, records, séries, meilleurs créneaux.</p>
-  </div>
-</section>
-
-<!-- ============ CALENDRIER + HISTORIQUE ============ -->
-<section class="split rev">
-  <img class="shot" src="img/s-calendrier.jpg" alt="Le calendrier des gains" loading="lazy" width="620" height="1347">
-  <div class="split-text">
-    <span class="badge" style="background:var(--violet)">JOUR PAR JOUR</span>
-    <h2>Le calendrier des gains</h2>
-    <p>Tes journées vertes et tes journées rouges, mois par mois, comme un vrai bilan de trading. Et dans « Tous mes paris », tout ton historique est là : recherche, filtres par statut, bookmaker ou sport, tri par plus grosse cote ou plus gros gain. Rien ne se perd, jamais.</p>
-  </div>
-</section>
-
-<!-- ============ SCAN MALIN ============ -->
-<section class="split">
-  <img class="shot" src="img/s-quoi-scanner.jpg" alt="Les types d'images acceptées par le scan" loading="lazy" width="620" height="1347">
-  <div class="split-text">
-    <span class="badge">ZÉRO SAISIE</span>
-    <h2>Le scan sait tout lire</h2>
-    <p>Le ticket partagé depuis l'app de ton bookmaker, un screenshot de ta liste de paris (tous importés d'un coup), ou la photo d'un ticket papier de bar : l'app t'explique même quoi capturer avec des exemples. Sélections, cotes, mises, gains, bookmaker, tout est lu et pré-rempli, tu n'as plus qu'à vérifier.</p>
-  </div>
-</section>
-
-<!-- ============ FEATURES ============ -->
-<section class="features">
-  <h2 class="section-title">Et ce n'est pas tout</h2>
-  <div class="fgrid">
-    <div class="fcard">
-      <div class="fchip" style="background:#FFF3D6">🪙</div>
-      <h3>LES JETONS</h3>
-      <p>Bonus quotidien, séries de connexion, défis vérifiés serveur. Une monnaie de jeu 100% gratuite, jamais d'argent réel.</p>
+<!-- ============ aide + jeu responsable ============ -->
+<section class="quiet">
+  <div class="in">
+    <div class="card" id="support">
+      <span class="tag">Aide &amp; contact</span>
+      <p>Une question, un bug, une idée ? Écris-nous à <a href="mailto:contact@sociabet.com"><strong>contact@sociabet.com</strong></a>, on répond en général sous 48&nbsp;heures. Les questions fréquentes (abonnement, compte, scan) sont sur la <a href="aide.html"><strong>page d'aide</strong></a>.</p>
     </div>
-    <div class="fcard">
-      <div class="fchip" style="background:#EFE6FF">🛍️</div>
-      <h3>LA BOUTIQUE</h3>
-      <p>Dépense tes jetons : cadres d'avatar animés, titres, thèmes de profil, fonds d'app (stade la nuit, casino, parquet…), compagnons et célébrations.</p>
-    </div>
-    <div class="fcard">
-      <div class="fchip" style="background:#FFE7F1">🔥</div>
-      <h3>LES RÉACTIONS</h3>
-      <p>Chambre ou félicite en un tap sur chaque pari. Les abonnés ont 4 réactions animées exclusives : GOAT, LÉGENDE, TACLE, DIAMANT.</p>
-    </div>
-    <div class="fcard">
-      <div class="fchip" style="background:#DFF5F1">📣</div>
-      <h3>LES ALERTES</h3>
-      <p>Cotes boostées et bons plans partagés par tes amis et tes suivis, avec notification. Fini le bon plan raté.</p>
-    </div>
-    <div class="fcard">
-      <div class="fchip" style="background:#EFE6FF">🤝</div>
-      <h3>LE PARRAINAGE</h3>
-      <p>200 jetons par pote qui rejoint avec ton code, et une célébration d'équipe exclusive à 5 parrainages.</p>
-    </div>
-    <div class="fcard">
-      <div class="fchip" style="background:#FFF3D6">👑</div>
-      <h3>SOCIABET+</h3>
-      <p>Pour les mordus : 100 scans par jour, le labo de stats complet, montantes illimitées, bankrolls multiples, tri de l'historique et cosmétiques exclusifs.</p>
+    <div class="card">
+      <span class="tag">Jeu responsable · 18+</span>
+      <p>SociaBet ne prend aucun pari en argent réel et n'est pas un opérateur de jeux d'argent. Les paris sportifs comportent des risques : endettement, isolement, dépendance. Pour être aidé, appelle le <strong>09&nbsp;74&nbsp;75&nbsp;13&nbsp;13</strong> (appel non surtaxé) ou rends-toi sur <a href="https://www.joueurs-info-service.fr" rel="noopener">joueurs-info-service.fr</a>.</p>
     </div>
   </div>
-</section>
-
-<!-- ============ CTA BAND ============ -->
-<section class="ctaband">
-  <h2>Ramène ton groupe de potes.</h2>
-  <p>SociaBet est gratuit. Crée ton groupe, lance un combiné, et que le meilleur chambre les autres.</p>
-  <a class="appstore inv" href="https://apps.apple.com/fr/app/sociabet/id6777273280">
-    <span class="apple-logo">&#63743;</span>
-    <span class="appstore-txt"><small>Télécharger dans</small>l'App Store</span>
-  </a>
-</section>
-
-<!-- ============ AIDE / SUPPORT ============ -->
-<section class="card" id="support">
-  <span class="badge teal">Aide &amp; contact</span>
-  <p>Une question, un bug, une idée ? Écris-nous à <a href="mailto:contact@sociabet.com"><strong>contact@sociabet.com</strong></a>, on répond en général sous 48&nbsp;heures. Les questions fréquentes (abonnement, compte, scan) sont sur la <a href="aide.html"><strong>page d'aide</strong></a>.</p>
-</section>
-
-<!-- ============ JEU RESPONSABLE ============ -->
-<section class="card teal">
-  <span class="badge teal">Jeu responsable · 18+</span>
-  <p>SociaBet ne prend aucun pari en argent réel et n'est pas un opérateur de jeux d'argent. Les paris sportifs comportent des risques : endettement, isolement, dépendance. Pour être aidé, appelle le <strong>09&nbsp;74&nbsp;75&nbsp;13&nbsp;13</strong> (appel non surtaxé) ou rends-toi sur <a href="https://www.joueurs-info-service.fr" rel="noopener">joueurs-info-service.fr</a>.</p>
 </section>
 
 <footer>
-  <span>© 2026 SociaBet · Thomas Aubert</span>
-  <a href="aide.html">Aide</a>
-  <a href="cgu.html">CGU</a>
-  <a href="confidentialite.html">Politique de confidentialité</a>
-  <a href="mentions-legales.html">Mentions légales</a>
+  <div class="in">
+    <span>© 2026 SociaBet · Thomas Aubert</span>
+    <a href="aide.html">Aide</a>
+    <a href="cgu.html">CGU</a>
+    <a href="confidentialite.html">Confidentialité</a>
+    <a href="mentions-legales.html">Mentions légales</a>
+  </div>
 </footer>
 
-</div>
+<script>
+  const io = "IntersectionObserver" in window
+    ? new IntersectionObserver((es) => es.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add("vis"); io.unobserve(e.target); }
+      }), { threshold: 0.14 })
+    : null;
+  document.querySelectorAll(".rv").forEach((el) => io ? io.observe(el) : el.classList.add("vis"));
+</script>
+
 </body>
 </html>
