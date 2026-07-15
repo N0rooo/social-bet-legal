@@ -330,3 +330,9 @@ html.js .hero-stage { opacity: 0; transform: scale(0.92) rotate(6deg); animation
 .block.paper { background: var(--paper); color: var(--ink); }
 .block.paper .kicker { background: var(--pink); }
 .block.paper p strong { background: var(--pink); color: #fff; }
+
+/* la flèche du bouton remonter, réellement centrée (c'est un lien, pas un bouton) */
+.totop {
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none; line-height: 1; padding: 0;
+}
