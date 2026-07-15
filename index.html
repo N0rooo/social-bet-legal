@@ -136,7 +136,7 @@
     <div class="block-copy rv">
       <span class="kicker">JOUR PAR JOUR</span>
       <h2>Le calendrier des gains</h2>
-      <p>Tes journées vertes et tes journées rouges, mois par mois, comme un vrai bilan de trader. Et dans « Tous mes paris » : recherche, filtres par statut, sport ou bookmaker, tri par plus grosse cote ou plus gros gain. <strong>Rien ne se perd, jamais.</strong></p>
+      <p>Tes journées vertes et tes journées rouges, mois par mois, comme un vrai bilan de trader. Remonte les mois passés en un tap. Et dans « Tous mes paris » : recherche, filtres par statut, sport ou bookmaker, tri par plus grosse cote ou plus gros gain. <strong>Rien ne se perd, jamais.</strong></p>
     </div>
   </div>
 </section>
@@ -158,6 +158,7 @@
   <div class="in">
     <div class="duo rv">
       <div class="phone tilt-l"><img src="img/s-theme-foot.jpg" alt="Le feed avec le fond terrain de foot" loading="lazy" width="620" height="1347"></div>
+      <div class="phone tilt-c"><img src="img/s-theme-basket.jpg" alt="Le feed avec le fond parquet basket" loading="lazy" width="620" height="1347"></div>
       <div class="phone tilt-r"><img src="img/s-theme-nuit.jpg" alt="Le profil avec le thème stade de nuit" loading="lazy" width="620" height="1347"></div>
     </div>
     <div class="block-copy rv">
@@ -180,7 +181,7 @@
   <div class="in">
     <h2 class="rv">Et ce n'est pas tout</h2>
     <div class="mosaic">
-      <div class="tile t1 rv"><div class="emo">🪙</div><h3>Les jetons</h3><p>Bonus quotidien, séries de connexion, défis vérifiés serveur. Une monnaie de jeu 100% gratuite, jamais d'argent réel.</p></div>
+      <div class="tile t1 rv"><div class="emo"><span class="jcoin">J</span></div><h3>Les jetons</h3><p>Bonus quotidien, séries de connexion, défis vérifiés serveur. Une monnaie de jeu 100% gratuite, jamais d'argent réel.</p></div>
       <div class="tile t2 rv"><div class="emo">🛍️</div><h3>La boutique</h3><p>Cadres d'avatar animés, titres, thèmes, fonds d'app (stade la nuit, casino, parquet…), compagnons et célébrations.</p></div>
       <div class="tile t3 rv"><div class="emo">🔥</div><h3>Les réactions</h3><p>Chambre ou félicite en un tap. Les abonnés ont 4 réactions animées exclusives : GOAT, LÉGENDE, TACLE, DIAMANT.</p></div>
       <div class="tile t4 rv"><div class="emo">📣</div><h3>Les alertes</h3><p>Cotes boostées et bons plans partagés par tes amis et tes suivis, avec notification. Fini le bon plan raté.</p></div>
@@ -233,6 +234,26 @@
       }), { threshold: 0.14 })
     : null;
   document.querySelectorAll(".rv").forEach((el) => io ? io.observe(el) : el.classList.add("vis"));
+
+  // Parallax discret : les téléphones dérivent lentement par rapport au scroll.
+  const pars = [...document.querySelectorAll(".block .phone, .duo .phone, .hero-stage")];
+  let tick = false;
+  function parallax() {
+    if (tick) return; tick = true;
+    requestAnimationFrame(() => {
+      const vh = innerHeight;
+      pars.forEach((el) => {
+        const r = el.getBoundingClientRect();
+        const c = (r.top + r.height / 2 - vh / 2) / vh;
+        el.style.translate = "0 " + (c * -34).toFixed(1) + "px";
+      });
+      tick = false;
+    });
+  }
+  if (matchMedia("(prefers-reduced-motion: no-preference)").matches && innerWidth > 760) {
+    addEventListener("scroll", parallax, { passive: true });
+    parallax();
+  }
 </script>
 
 </body>

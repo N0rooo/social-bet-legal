@@ -263,12 +263,6 @@ html.js .hero-stage { opacity: 0; transform: scale(0.92) rotate(6deg); animation
 .duo .tilt-r { transform: rotate(5deg) translateX(-14px) translateY(22px); }
 .duo .phone:hover { transform: rotate(0deg) translateY(-6px); z-index: 2; }
 
-/* ---- snap doux (desktop uniquement) ---- */
-@media (min-width: 900px) and (prefers-reduced-motion: no-preference) {
-  html { scroll-snap-type: y proximity; }
-  .block, .how, .more, .last { scroll-snap-align: start; scroll-margin-top: 0px; }
-}
-
 /* ---- responsive mobile affiné ---- */
 @media (max-width: 760px) {
   .in { padding: 0 18px; }
@@ -287,4 +281,18 @@ html.js .hero-stage { opacity: 0; transform: scale(0.92) rotate(6deg); animation
   .last { padding: 64px 0; }
   .duo .phone { width: min(170px, 42vw); }
   .quiet .card { padding: 18px; font-size: 14px; }
+}
+
+/* trio de thèmes */
+.duo .tilt-c { transform: rotate(0deg) translateY(-10px); z-index: 2; }
+@media (min-width: 761px) { .duo .phone { width: min(190px, 30vw); } }
+
+/* la pièce à J de l'app */
+.jcoin {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; border-radius: 999px;
+  background: radial-gradient(circle at 34% 30%, #FFE28A, var(--gold) 58%, #E5A50A);
+  border: 3px solid var(--ink);
+  font-family: var(--display); font-size: 22px; color: var(--ink);
+  box-shadow: inset -2px -3px 0 rgba(26, 23, 48, 0.22), 2px 3px 0 rgba(26, 23, 48, 0.35);
 }
