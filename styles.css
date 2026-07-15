@@ -222,3 +222,21 @@ img { max-width: 100%; height: auto; }
 .ctaband p { color: rgba(255, 255, 255, 0.75); margin-bottom: 20px; }
 /* 3 étapes dans une grille de 2 colonnes : la dernière prend toute la largeur, centrée */
 .step:last-child { grid-column: 1 / -1; }
+
+/* ---- landing v4 : desktop large + sections alternées ---- */
+body.landing .wrap { max-width: 1060px; }
+.split .badge, .split-text .badge { margin-bottom: 4px; }
+.split.rev { flex-direction: row-reverse; }
+.split { margin-bottom: 22px; }
+.split-text h2 { margin-top: 8px; }
+.split-text p strong { color: var(--ink); }
+@media (min-width: 900px) {
+  .hero .shot { width: 330px; }
+  .split { padding: 32px 38px; gap: 44px; }
+  .split .shot { width: 260px; }
+  .steps-grid { grid-template-columns: repeat(3, 1fr); }
+  .step:last-child { grid-column: auto; }
+}
+@media (max-width: 899px) {
+  .split.rev { flex-direction: row; }
+}
