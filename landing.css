@@ -184,9 +184,9 @@ a { color: inherit; }
 .mosaic { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; }
 .tile {
   border: 4px solid var(--paper); border-radius: 22px; padding: 22px;
-  color: var(--ink); transition: transform 0.16s ease, box-shadow 0.16s ease;
+  color: var(--ink); transition: translate 0.16s ease, box-shadow 0.16s ease;
 }
-.tile:hover { transform: translate(-2px, -4px); box-shadow: 6px 8px 0 rgba(251, 233, 210, 0.35); }
+.tile:hover { translate: -2px -4px; box-shadow: 6px 8px 0 rgba(251, 233, 210, 0.35); }
 .tile .emo { font-size: 30px; margin-bottom: 12px; }
 .tile h3 { font-family: var(--display); text-transform: uppercase; font-size: 16px; margin-bottom: 7px; }
 .tile p { font-size: 14px; font-weight: 500; }
@@ -335,4 +335,11 @@ html.js .hero-stage { opacity: 0; transform: scale(0.92) rotate(6deg); animation
 .totop {
   display: flex; align-items: center; justify-content: center;
   text-decoration: none; line-height: 1; padding: 0;
+}
+
+/* le reveal (.rv.vis) écrasait la transition du hover des tuiles : on déclare les deux.
+   Le survol anime translate/box-shadow (0.16s), le reveal anime opacity/transform (0.7s). */
+html.js .tile.rv.vis {
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              translate 0.16s ease, box-shadow 0.16s ease;
 }
