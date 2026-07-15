@@ -255,3 +255,36 @@ html.js .hero-stage { opacity: 0; transform: scale(0.92) rotate(6deg); animation
   .block .in, .block.rev .in { flex-direction: column; }
   .how-card { transform: none !important; }
 }
+
+/* ---- section thèmes : deux téléphones ---- */
+.duo { display: flex; gap: 0; flex: 0 0 auto; margin: 0 auto; }
+.duo .phone { width: min(225px, 56vw); }
+.duo .tilt-l { transform: rotate(-5deg) translateX(14px); z-index: 1; }
+.duo .tilt-r { transform: rotate(5deg) translateX(-14px) translateY(22px); }
+.duo .phone:hover { transform: rotate(0deg) translateY(-6px); z-index: 2; }
+
+/* ---- snap doux (desktop uniquement) ---- */
+@media (min-width: 900px) and (prefers-reduced-motion: no-preference) {
+  html { scroll-snap-type: y proximity; }
+  .block, .how, .more, .last { scroll-snap-align: start; scroll-margin-top: 0px; }
+}
+
+/* ---- responsive mobile affiné ---- */
+@media (max-width: 760px) {
+  .in { padding: 0 18px; }
+  .hero h1 { font-size: clamp(40px, 12vw, 54px); }
+  .hero-sub { font-size: 16px; }
+  .block { padding: 54px 0; }
+  .block h2 { font-size: clamp(27px, 7.4vw, 34px); }
+  .block p { font-size: 15px; }
+  .block .phone { width: min(240px, 70vw); }
+  .ticker span { font-size: 14px; padding: 0 14px; }
+  .ticker { padding: 10px 0; }
+  .how { padding: 56px 0 20px; }
+  .how-card { padding: 22px 18px 24px; }
+  .more { padding: 60px 0; }
+  .tile { padding: 18px; }
+  .last { padding: 64px 0; }
+  .duo .phone { width: min(170px, 42vw); }
+  .quiet .card { padding: 18px; font-size: 14px; }
+}
